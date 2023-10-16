@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>헤더 예시</title>
+<<<<<<< HEAD
+    <link rel="stylesheet" type="text/css" href="./Zero100_CSS.css">
+
+=======
+    <style>
+        body {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            margin: 0;
+            background: url("./background.svg") no-repeat center;
+            background-size: cover;
+            /*
+            background-image: url("./background.svg");
+            background-size: cover;
+            */
+        }
+
+        /* 헤더 스타일 */
+        header {
+            width: 100%;
+            height: 15%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            /*background-color: #fff;*/
+        }
+
+        /* 로고 이미지 스타일 */
+        .logo {
+            width: 30%;
+            height: 100%;
+            position: relative;
+        }
+
+        #logImg {
+            position: absolute;
+            width: 4vh;
+            height: 5vh;
+            left: 8vw;
+            top: 7vh;
+        }
+
+        #manu1 {
+            width: 70%;
+            height: 100%;
+            position: relative;
+        }
+
+        /* 우측 메뉴 스타일 */
+        .menu {
+            position: absolute;
+            right: 10vw;
+            top: 7vh;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        /* 각 메뉴 항목 스타일 */
+        .menu-item {
+            margin-right: 5vw;
+            font-weight: bold;
+            font-size: 2vh;
+            cursor: pointer;
+            color: #96BFF2;
+        }
+
+        /* 햄버거 아이콘 스타일 */
+        .hamburger-icon {
+            font-size: 4vh;
+            cursor: pointer;
+            color: #96BFF2;
+        }
+
+        #body2 {
+            position: relative;
+            height: 85%;
+            width: 100%;
+        }
+
+        #hidakiImg {
+            width: 13vw;
+            height: 22vh;
+            position: absolute;
+            left: 9vw;
+            top: 12vh;
+            z-index: 1;
+        }
+
+        /*
+        #viewImg {
+            position: absolute;
+            width: 70vw;
+            height: 66vh;
+            top: 20vh;
+            left: 4vw;
+            z-index: 0;
+        }*/
+
+        #infoImg {
+            position: absolute;
+            /*height: 50%;*/
+            width: 14%;
+            top: 45vh;
+            left: 77vw;
+        }
+
+        .myButton {
+            display: block;
+            position: absolute;
+            bottom: 10vh;
+            left: 10vw;
+            width: 14vw;
+            height: 14vw;
+            /*background-color: #333;*/
+        }
+
+        #upImg {
+            position: absolute;
+            top: 1vh;
+            left: 9vh;
+            width: 6vh;
+            cursor: pointer;
+        }
+
+        #leftImg {
+            position: absolute;
+            top: 9vh;
+            left: 1vh;
+            width: 6vh;
+            cursor: pointer;
+        }
+
+        #rightImg {
+            position: absolute;
+            top: 9vh;
+            right: 2vh;
+            width: 6vh;
+            cursor: pointer;
+        }
+
+        #downImg {
+            position: absolute;
+            bottom: 2vh;
+            left: 9vh;
+            width: 6vh;
+            cursor: pointer;
+        }
+
+        /* 버튼 */
+        .container {
+            position: absolute;
+            top: 10vh;
+            right: 9vw;
+            width: 9vw;
+            height: 8vh;
+            overflow: hidden;
+            background: linear-gradient(to right, #333, #333);
+            transition: background 0.3s ease;
+            border-radius: 5vh;
+        }
+
+        .image {
+            position: absolute;
+            top: 0;
+            left: 0.45vw;
+            width: 4vw;
+            height: 8vh;
+
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+
+        .image.active {
+
+            transform: translateX(4.3vw);
+
+        }
+
+        .container.active {
+            background: linear-gradient(to right, #96BFF2, #96BFF2);
+        }
+
+
+        /* 멈춤 버튼 */
+        /*
+        .resumeImg {
+            display: none;
+            position: absolute;
+            width: 3vw;
+            height: 8vh;
+            top: 10vh;
+            right: 22vw;
+
+        }*/
+
+        /* 미디어 쿼리 */
+        @media (max-width: 100000px) {
+            /* 모든 픽셀에서 초기 스타일 유지 */
+        }
+    </style>
+>>>>>>> aecbe0f8558b475313819cf1e6f69cf7478e2598
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img id="logImg" src="./Logo.svg" alt="로고 이미지">
+        </div>
+        <div id="manu1">
+            <div class="menu">
+                <div class="menu-item">Schedule</div>
+                <div class="menu-item">Map</div>
+                <div class="menu-item">Mode</div>
+                <div class="menu-item">Customer Services</div>
+                <div class="hamburger-icon">☰</div>
+            </div>
+        </div>
+    </header>
+
+    <div id="body2">
+        <img id="hidakiImg" src="./Hidaki.svg" alt="hidakiImg" />
+        <!--<img id="viewImg" src="./view.png" alt="viewImg" />-->
+        <div class="container">
+            <img id="buttonImg" class="image" src="button.svg" alt="Image">
+        </div>
+        <!--<img id="resumeImg" class="resumeImg" src="resume.svg" alt="Image" />-->
+        <img id="infoImg" src="./info.svg" alt="infoImg">
+        <div class="myButton">
+            <img id="upImg" src="./up.svg" alt="Image">
+            <img id="leftImg" src="./left.svg" alt="Image">
+            <img id="rightImg" src="./right.svg" alt="Image">
+            <img id="downImg" src="./down.svg" alt="Image">
+        </div>
+    </div>
+
+<<<<<<< HEAD
+    <script src="./Zero100_js.js"></script>
+
+    
+=======
+    <script>
+        let loop;
+        // ESP32로 동작을 보내는 함수
+        function sendActionToESP32(action, buttonName) {
+            console.log(action, "action");
+            console.log(buttonName, "buttonName");
+            // 여기에 ESP32로 동작을 보내는 코드를 작성합니다.
+            // buttonName을 활용하여 각 버튼에 대한 동작을 구분할 수 있습니다.
+            // 예를 들어 AJAX 요청을 사용하여 서버로 동작을 전송하거나 WebSocket을 통해 통신할 수 있습니다.
+            // 자세한 구현 방법은 ESP32 측에서 사용하는 통신 프로토콜과 라이브러리에 따라 다를 수 있습니다.
+            // 해당 동작을 수행하는 API 또는 함수를 호출하면 됩니다.
+
+            if (action === "Pressed") {
+                console.log(1111);
+            }
+            if (action === "Pressed" && buttonName === "active") {
+                value = 5
+                console.log(value, "sent");
+                // loop = setInterval(() => {
+                var esp32Address = "172.20.10.11";
+
+                var url = "http://" + esp32Address + "/?param1=" + value;
+
+                // HTTP GET 요청을 보냅니다.
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET", url, true);
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        // 요청이 성공적으로 완료되었을 때 실행할 코드를 작성합니다.
+                        console.log("Data sent successfully");
+                    }
+                };
+                xhr.send();
+
+                // }, 4000)
+                console.log(value);
+            } else {
+                // clearInterval(loop);
+
+                if (action == 'RELEASED') {
+                    // 정지 상태 0
+                    value = 0;
+                    console.log(value, 'sent');
+                } else {
+                    if (buttonName == 'up') {
+                        // forward 1
+                        value = 1;
+                        console.log(value, 'sent');
+                    }
+                    else if (buttonName == 'down') {
+                        // back 2
+                        value = 2;
+                        console.log(value, 'sent');
+                    }
+                    else if (buttonName == 'left') {
+                        // left 3
+                        value = 3;
+                        console.log(value, 'sent');
+                    }
+                    else if (buttonName == 'right') {
+                        // right 4
+                        value = 4;
+                        console.log(value, 'sent');
+                    }
+
+                }
+
+                var esp32Address = "172.20.10.11";
+
+                var url = "http://" + esp32Address + "/?param1=" + value;
+
+                // HTTP GET 요청을 보냅니다.
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET", url, true);
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        // 요청이 성공적으로 완료되었을 때 실행할 코드를 작성합니다.
+                        console.log("Data sent successfully");
+                    }
+                };
+                xhr.send();
+
+                console.log('Sending action to ESP32 - Button', buttonName, ':', action);
+            }
+        }
+
+
+        // 버튼을 누르는 동작 감지 핸들러 생성
+        function createButtonPressHandler(buttonName) {
+            return function () {
+                // 여기에 ESP32로 보낼 특정 동작을 구현합니다.
+                console.log(buttonName + "createButtonPressedHandler")
+                sendActionToESP32('PRESSED', buttonName);
+            }
+        }
+
+        // 버튼을 떼는 동작 감지 핸들러 생성
+        function createButtonReleaseHandler(buttonName) {
+            return function () {
+                // 정지 0
+                // 여기에 ESP32로 보낼 다른 동작을 구현합니다.
+                console.log(buttonName + "createButtonReleasedHandler")
+                sendActionToESP32('RELEASED', buttonName);
+            }
+        }
+
+        const container = document.querySelector('.container');
+        const image = document.getElementById('buttonImg');
+
+        createButtonReleaseHandler(null);
+        image.addEventListener('click', function () {
+            container.classList.toggle('active');
+            image.classList.toggle('active');
+
+            if (container.classList.contains('active')) {
+                container.style.transitionDuration = '0.3s';
+                //document.getElementById("resumeImg").style.display = 'block';
+                image.src = 'onoff.svg'; // 다른 이미지로 변경
+
+                document.getElementById("upImg").style.display = 'none';
+                document.getElementById("leftImg").style.display = 'none';
+                document.getElementById("rightImg").style.display = 'none';
+                document.getElementById("downImg").style.display = 'none';
+
+                console.log('ACTIVE');
+
+
+
+                // 자율주행 5
+                // active 상태가 되고 
+
+                sendActionToESP32("Pressed", "active");
+            } else {
+                container.style.transitionDuration = '0.3s';
+                //document.getElementById("resumeImg").style.display = 'none';
+                image.src = 'button.svg'; // 원래 이미지로 변경
+
+                document.getElementById("upImg").style.display = 'block';
+                document.getElementById("leftImg").style.display = 'block';
+                document.getElementById("rightImg").style.display = 'block';
+                document.getElementById("downImg").style.display = 'block';
+
+                console.log('NON ACTIVE');
+                sendActionToESP32('RELEASED', direction);
+
+                var upButton = document.getElementById('upImg');
+                var leftButton = document.getElementById('leftImg');
+                var rightButton = document.getElementById('rightImg');
+                var downButton = document.getElementById('downImg');
+
+                // 방향 키 입력을 처리하기 위한 변수
+                var direction = null;
+                var isKeyPressed = false;
+
+                // 각 버튼에 대한 이벤트 리스너 등록
+                upButton.addEventListener('mousedown', createButtonPressHandler('up'));
+                upButton.addEventListener('mouseup', createButtonReleaseHandler('up'));
+
+                leftButton.addEventListener('mousedown', createButtonPressHandler('left'));
+                leftButton.addEventListener('mouseup', createButtonReleaseHandler('left'));
+
+                rightButton.addEventListener('mousedown', createButtonPressHandler('right'));
+                rightButton.addEventListener('mouseup', createButtonReleaseHandler('right'));
+
+                downButton.addEventListener('mousedown', createButtonPressHandler('down'));
+                downButton.addEventListener('mouseup', createButtonReleaseHandler('down'));
+
+                // 방향 키를 누를 때 이벤트 처리
+                document.addEventListener("keydown", function (event) {
+                    if (!isKeyPressed) {
+                        // 방향 키 코드를 확인하여 원하는 동작에 따라 처리합니다.
+                        if (event.code === "ArrowUp") {
+                            // 위쪽 방향키를 눌렀을 때 실행할 코드
+                            direction = "up";
+                            isKeyPressed = true;
+                        } else if (event.code === "ArrowDown") {
+                            // 아래쪽 방향키를 눌렀을 때 실행할 코드
+                            direction = "down";
+                            isKeyPressed = true;
+                        } else if (event.code === "ArrowLeft") {
+                            // 왼쪽 방향키를 눌렀을 때 실행할 코드
+                            direction = "left";
+                            isKeyPressed = true;
+                        } else if (event.code === "ArrowRight") {
+                            // 오른쪽 방향키를 눌렀을 때 실행할 코드
+                            direction = "right";
+                            isKeyPressed = true;
+                        }
+                        checkDirection(direction);
+                    }
+                    // 방향 키를 누르고 있을 때 브라우저의 스크롤 이동을 방지합니다.
+                    //event.preventDefault();
+                });
+
+                // 방향 키를 뗄 때 이벤트 처리
+                document.addEventListener("keyup", function (event) {
+                    // 눌렀던 방향 키를 뗄 때 실행할 코드
+                    direction = null;
+                    isKeyPressed = false;
+                    // createButtonReleaseHandler(direction);
+                    sendActionToESP32('RELEASED', direction);
+                });
+
+
+
+                // 주기적으로 현재 방향 값을 확인하고 처리하는 함수
+                function checkDirection(direction) {
+                    if (direction === "up") {
+                        // 위쪽 방향으로 이동하는 동작 처리
+                        console.log("Up Pressed");
+                        // createButtonPressHandler(direction);
+                        sendActionToESP32('PRESSED', direction);
+                    } else if (direction === "down") {
+                        // 아래쪽 방향으로 이동하는 동작 처리
+                        console.log("Down Pressed");
+                        // createButtonPressHandler(direction);
+                        sendActionToESP32('PRESSED', direction);
+                    } else if (direction === "left") {
+                        // 왼쪽 방향으로 이동하는 동작 처리
+                        console.log("Left Pressed");
+                        // createButtonPressHandler(direction);
+                        sendActionToESP32('PRESSED', direction);
+                    } else if (direction === "right") {
+                        // 오른쪽 방향으로 이동하는 동작 처리
+                        console.log("Right Pressed");
+                        // createButtonPressHandler(direction);
+                        sendActionToESP32('PRESSED', direction);
+                    }
+
+                    // 주기적으로 실행하려는 경우에는 requestAnimationFrame을 사용하여 함수를 호출합니다.
+                    // 예를 들어, 60FPS로 실행하려면 다음과 같이 사용할 수 있습니다:
+                    // requestAnimationFrame(checkDirection);
+                }
+
+
+
+            }
+        });
+    </script>
+>>>>>>> aecbe0f8558b475313819cf1e6f69cf7478e2598
+</body>
+
+</html>

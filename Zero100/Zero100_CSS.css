@@ -1,0 +1,177 @@
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background: url("./background.svg") no-repeat center;
+    background-size: cover;
+    /*
+    background-image: url("./background.svg");
+    background-size: cover;
+    */
+}
+
+/* 헤더 스타일 */
+header {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    /*background-color: #fff;*/
+}
+
+/* 로고 이미지 스타일 */
+.logo {
+    width: 30%;
+    height: 100%;
+    position: relative;
+}
+
+#logImg {
+    position: absolute;
+    width: 4vh;
+    height: 5vh;
+    left: 8vw;
+    top: 7vh;
+}
+
+#manu1 {
+    width: 70%;
+    height: 100%;
+    position: relative;
+}
+
+/* 우측 메뉴 스타일 */
+.menu {
+    position: absolute;
+    right: 10vw;
+    top: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* 각 메뉴 항목 스타일 */
+.menu-item {
+    margin-right: 5vw;
+    font-weight: bold;
+    font-size: 2vh;
+    cursor: pointer;
+    color: #96BFF2;
+}
+
+/* 햄버거 아이콘 스타일 */
+.hamburger-icon {
+    font-size: 4vh;
+    cursor: pointer;
+    color: #96BFF2;
+}
+
+#body2 {
+    position: relative;
+    height: 85%;
+    width: 100%;
+}
+
+#hidakiImg {
+    width: 13vw;
+    height: 22vh;
+    position: absolute;
+    left: 9vw;
+    top: 12vh;
+    z-index: 1;
+}
+
+#infoImg {
+    position: absolute;
+    /*height: 50%;*/
+    width: 14%;
+    top: 45vh;
+    left: 77vw;
+}
+
+.myButton {
+    display: block;
+    position: absolute;
+    bottom: 10vh;
+    left: 10vw;
+    width: 14vw;
+    height: 14vw;
+    /*background-color: #333;*/
+}
+
+#upImg {
+    position: absolute;
+    top: 1vh;
+    left: 9vh;
+    width: 6vh;
+    cursor: pointer;
+}
+
+#leftImg {
+    position: absolute;
+    top: 9vh;
+    left: 1vh;
+    width: 6vh;
+    cursor: pointer;
+}
+
+#rightImg {
+    position: absolute;
+    top: 9vh;
+    right: 2vh;
+    width: 6vh;
+    cursor: pointer;
+}
+
+#downImg {
+    position: absolute;
+    bottom: 2vh;
+    left: 9vh;
+    width: 6vh;
+    cursor: pointer;
+}
+
+/* 버튼 */
+.container {
+    position: absolute;
+    top: 10vh;
+    right: 9vw;
+    width: 9vw;
+    height: 8vh;
+    overflow: hidden;
+    background: linear-gradient(to right, #333, #333);
+    transition: background 0.3s ease;
+    border-radius: 5vh;
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    left: 0.45vw;
+    width: 4vw;
+    height: 8vh;
+
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+.image.active {
+
+    transform: translateX(4.3vw);
+
+}
+
+.container.active {
+    background: linear-gradient(to right, #96BFF2, #96BFF2);
+}
+
+/* 미디어 쿼리 */
+@media (max-width: 100000px) {
+    /* 모든 픽셀에서 초기 스타일 유지 */
+}
